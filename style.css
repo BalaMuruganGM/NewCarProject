@@ -1,0 +1,983 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+.container{
+    /* background: linear-gradient(to right, #141652, #305297); */
+    width: 100%;
+    background-color: #141652;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subContainer{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 90%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #fff;
+    margin-top: 4%;
+    padding: 5px 30px 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+nav .navLogo{
+    width: 140px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+.navLeft{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.navButton{
+    display: flex;
+    gap: 30px;
+    color: black;
+}
+
+.navButton a , .navRight a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+.navRight{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.navRight button{
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    background-color:crimson;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+    color: #fff;
+}
+
+/* .navRight button i{
+    color: green;
+} */
+
+.home{
+    /* background-color: red; */
+    width: 90%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeHead{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    align-items: center;
+    font-variant: small-caps;
+    color: white;
+    font-weight: 800;
+    margin:5% 0px 2% 0px;
+    
+}
+
+.homeHead h1 , .homeHead p{
+    letter-spacing: -2px;
+}
+
+.homeHead h1{
+    word-spacing: -10px;
+    font-size: 68px;
+
+}
+
+.homeHead p{
+    font-weight:lighter;
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.homeBody{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    /* height: 400px; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.homeBody img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Logo page Start */
+
+    .LogoPage{
+        width: 90%;
+        /* height: 110vh; */
+        background-color: white;
+        border-radius: 20px;
+        margin: 4% 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding:40px 0px;
+        gap: 40px;
+        position: relative;
+    }
+
+    .LogoPageHead{
+        /* font-size:20px; */
+        text-align: center;
+        color: #141652;
+        line-height: 45px;
+    }
+
+    .LogoOption{
+        display: flex;
+        width:80%;
+        justify-content: space-between;
+    }
+
+    .LogoOption button{
+        padding:10px 20px;
+        border: unset;
+        /* border: 2px solid blue; */
+        border-radius: 20px;
+        border: 1px solid gray;
+    }
+
+    .LogoOption button:hover{
+        border: 1px solid blue;
+        color: blue;
+    }
+
+
+    .LogoScrollTag{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .LogoScroll{
+        position: absolute;
+        width:400%;
+        min-height: 70vh;
+        overflow: hidden;
+        display: flex;
+        left: 0px;
+    }
+
+    .Logos{
+        display: grid;
+        min-height: 70vh;
+        padding-top: 10px;
+        grid-template-columns: auto auto auto auto;
+        width:25%;
+        gap: 30px;
+        justify-content: center;
+        border: unset;
+        margin-top: 20px;
+    }
+
+    .Logos-1{
+        width: 250px;
+        height:160px;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    }
+
+    .Logos-1 img{
+        width:70px;
+        height:60px;
+    }
+
+    .LogosTag-1{
+        display:grid;
+    }
+
+    .LogoArrow{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        width:100%;
+        padding: 0px 30px;
+        justify-content: space-between;
+    }
+
+    .LogoArrow i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .pulliTag{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .pulliTag p{
+        height: 10px;
+        width: 10px;
+        border: 1px solid blue;
+        border-radius: 50%;
+    }
+
+    .pulli-1{
+        background-color: blue;
+    }
+
+    /* .LogoScrollTag , .pulliTag{
+        display: none;
+    } */
+
+
+    /* Lpopular Tag Start */
+
+    .Lpopular{
+        
+        width:80%;
+        height: 300px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+
+    /* .LpopularBody-2 , .LpopularBody-3 , .LpopularBody-4{
+        display: none;
+    } */
+
+    .LpopularScroll{
+        width: 400%;
+        height: 100%;
+        display: flex;
+        position:absolute;
+        left: 0px;
+    }
+
+    .LpopularBody-1 , .LpopularBody-2{
+        width:25%;
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 38px 20px;
+        justify-content:space-between;
+    }
+
+    
+
+    .LpopularBody a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        border: 2px solid transparent;
+        transition: all 0.30s;
+    }
+
+    .LpopularBody a:hover{
+        border: 2px solid #033f63;
+        color: #033f63;
+        background-color: transparent;
+    }
+
+
+    .LpopularArrow{
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .LpopularArrow i{
+        cursor: pointer;
+        font-size: 25px;
+
+    }
+
+    /* Lpopular Tag closes */
+
+
+    /* .Logos , .LogoArrow , .pulliTag , .LogoScrollTag{
+        display: none;
+    } */
+
+    .LPrice{
+        width: 100%;
+        justify-content:space-around;
+        padding: 20px 6%;
+        display: grid;
+        gap: 50px;
+
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .LPrice a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+
+    .LPrice{
+        display: none;
+    }
+
+    .Lbody{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        min-height: 50vh;
+        gap: 20px;
+        justify-content: space-between;
+        width:75%;
+        /* padding: 0px 10%; */
+    }
+
+    .Lbody-1{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: baseline;
+        justify-content: center;
+        width: 120px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .Lbody-1 p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Lbody-1 img{
+        width:100%;
+        height:70px;
+    }
+
+    .Lbody{
+        display: none;
+    }
+
+    .Lseats{
+        width: 85%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .Lseats a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px;
+        /* border: 1px solid lightgray; */
+    }
+
+    .Lseats{
+        display: none;
+    }
+
+
+
+/* Logo Page clouses */
+
+/* Expole Page is Start */
+
+
+/* Expoler Page is clouse */
+
+/* Listing car Start */
+
+    .Listing{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        padding:5% 2%;
+    }
+
+
+    .ListingHead{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ListingBut{
+        display: flex;
+        gap: 20px;
+    }
+
+    .ListingBut-1 , .ListingBut-2{
+        width: 120px;
+        padding: 15px 10px;
+        border: unset;
+        border-radius: 5px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .ListingBut-2{
+        background-color: transparent;
+        color: black;
+    }
+    
+
+    .ListingCar{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        padding:4% 1%;
+        gap: 30px;
+    }
+
+    .ListingCarBox{
+        /* width:500px; */
+        height: 200px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* border: 2px solid black; */
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        gap: 20px;
+    }
+
+    .LeftListingCar{
+        width: 40%;
+        height: 100%;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+
+    }
+
+    .scrollImg{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        left:0px;
+        display: flex;
+    }
+
+    .scrollImg img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .rightListingCar{
+        width: 50%;
+    }
+
+    .CarArrows{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        color: white;
+        padding: 0px 2%;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .CarArrows i{
+        cursor: pointer;
+    }
+
+    .rightListingCar{
+        padding: 2%;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+
+    .rightHead{
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+    }
+
+    .rightHead h1{
+        font-size: 22px;
+        color: blue;
+    }
+
+    .rightBody h1{
+        font-size: 22px;
+    }
+
+    .rightBody{
+        transition: all 1s;
+    }
+
+
+    .rightListingCar:hover .rightBody{
+        color: blue;
+    }
+
+ 
+
+    .rightBottom{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rightSpeed , .rightGasoline , .rightCC{
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+/* Listing Car clouses */
+
+/* price Page is Start */
+
+    .pricePage{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        min-height: 80vh;
+        background-color:#fff;
+        padding: 1%;
+    }
+
+    .priceHead{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .priceHead h1{
+        font-size: 35px;
+    }
+
+    .priceHead a{
+        width: 120px;
+        height: 50px;
+        /* background-color: blue; */
+        color: #fff;
+        background-color: blue;
+        border: unset;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .priceBody{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .leftPrice{
+        width: 20%;
+        /* background-color: yellow; */
+        padding: 1% 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+    }
+
+    .leftpriceHead{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .leftpriceBody{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+
+
+/* featur car star */
+
+    .rightPrice{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        width: 80%;
+        justify-content:center;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+
+    .rightPrice::-webkit-scrollbar{
+        width: 0px;
+    }
+
+
+    .rightPriceBox{
+        width:320px;
+        height:270px;
+        background-color:white;
+        padding-bottom:10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightgray;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .rightPriceBox img{
+        width:100%;
+        height:190px;
+    }
+
+
+    .featureHeadOne-tag{
+        margin-top: 15px;
+    }
+
+    .featureHeadOne-tag , .featureHeadtwo-tag{
+        display: flex;
+        justify-content: space-between;
+        padding:2px 10px;
+        font-size: 18px;
+    }
+
+    .featureHeadtwo-tag{
+        justify-content: start;
+        gap: 15px;
+    }
+
+/* Featur car clouse */
+
+
+/* price page clouse */
+
+/* section page is start */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    background-color:#141652;
+    margin: 5% 0px 1% 0px;
+}
+
+.sectionHead{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    /* line-height: 60px; */
+    font-weight: 800;
+}
+
+
+.sectionBody{
+        width:95%;
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+
+    .set1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: white;
+        padding-bottom: 20px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    }
+
+
+    .set1Content{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+        /* background-color: red; */
+    }
+
+    .set1 h3{
+        color:#141652;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 22px;
+    }
+
+    .set1 p{
+        color: #141652;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .set1 img{
+        width:100%;
+        height: 210px;
+
+    }
+
+
+    .setionBut{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .setionBut a{
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:20px;
+        border: 2px solid white;
+    }
+/* section page is clouses */
+
+/* footer page Start */
+
+    /* footer is start */
+
+    footer{
+        width: 100%;
+        background-color:#141652;
+        min-height: 400px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 20px 5%;
+        margin-top: 50px;
+    }
+
+    .footerhead{
+        display: flex;
+        gap: 20px;
+        color: #cccccc;
+    }
+
+    .footerLine{
+        height: 2px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .FooterContent{
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+    }
+
+    .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerTextHead{
+        color: #ffffff;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    .footerSix{
+        margin-top: 8%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+    }
+
+    .footerLogos{
+        display: flex;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+
+    .footerIcon{
+        font-size: 25px;
+        display: flex;
+        gap: 10px;
+    }
+
+/* footer is clouses */
+
+/* Resposive Start */
+
+/* footer Responsive Start */
+
+    @media screen and (max-width:1100px) {
+        footer{
+            padding: 20px 2%;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .footerSix{
+            margin-top:1%;
+        }
+
+        footer{
+            padding: 20px 6%;
+        }
+
+        .FooterContent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 8%;
+        }
+    }
+
+    @media screen and (max-width:850px){
+       
+        .footerhead{
+            justify-content: center;
+        }
+
+        .footerhead a{
+            font-size: 12px;
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .FooterContent{
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+        }
+
+        .footerhead a{
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .footerhead{
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width:400px) {
+        .FooterContent{
+            grid-template-columns: auto;
+            row-gap: 5%;
+        }
+    }
+
+/* footer Responsive clouses */
+
+
+/* footer page clouses */
